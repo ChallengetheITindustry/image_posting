@@ -1,0 +1,5 @@
+<%= form_with model: @post, local: true do |form| %>
+  <p><%= form.text_field :title %></p>
+  <p><%= form.file_field :image, accept: "image/png, image/jpeg, image/gif "%></p>
+  <p><%= form.submit "送信" %></p>
+<% end %>
